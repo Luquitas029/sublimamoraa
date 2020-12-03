@@ -1,0 +1,203 @@
+$color-principal: #ffffff;
+$color-secundario:#1A1A1A;
+$font-sizes: ('xxx-small': 14px,'xx-small': 16px ,'x-small': 20px, 'small': 25px ,'large':40px, 'x-large':60px,'xx-large': 80px,);
+
+
+@mixin main-button {
+    border-color: rgb(64, 133, 224);
+    background-color: $color-secundario;
+    font-size: map-get($map: $font-sizes, $key:x-small )    
+}
+
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+    height: 100%;
+}
+h1{
+    font-size: map-get($map: $font-sizes, $key: x-large);
+    font-weight: 600;
+    line-height: 80px;
+}
+.fuente-parrafo{
+    font-size: map-get($map: $font-sizes, $key: small);
+    font-weight: 600;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+.navbar{
+    background-color:$color-principal;
+    box-shadow:  02 2px 4px 0 rgba(0, 0, 0, .05);
+    min-height: 100px;
+    font-size: map-get($map: $font-sizes, $key:x-small )    
+    
+}
+.nav-link{
+    color:$color-secundario;
+    
+}
+.nav-link:hover{
+    color: $color-secundario;
+    text-decoration: underline;
+}
+.logo-brand{
+    min-width: 90px;
+    max-width: 100px;
+       
+}
+.navbar-toggler{
+    font-size: map-get($map: $font-sizes, $key: large);
+}
+.navbar-toggler:focus{
+    outline: none;
+}
+#section{
+    background-image: url(https://miro.medium.com/max/3840/1*9zaHCcIqRMYAyn6i10rHBQ.png);
+    padding: 400px 100px;
+    margin-top: 20px; 
+	text-align: center;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+    min-height: 700px;
+    color: $color-principal;
+    :before {
+        content:'';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0, .05);
+    }
+    .fuente-parrafo{
+        color: $color-principal;
+        font-size: map-get($map: $font-sizes, $key: small);
+    }
+    .fuente-título{
+        color: $color-principal;
+        font-size: map-get($map: $font-sizes, $key: x-large);
+    }
+}
+.content-center{
+    max-width: 800px;   
+}
+footer{
+font-size: map-get($map:$font-sizes, $key: xx-small); 
+background-color: whitesmoke;
+}
+.link-footer{
+    text-decoration: none;    
+}
+
+h2{
+    font-size: map-get($map: $font-sizes, $key: x-large );    
+}
+#fondo-galeria{
+    color: $color-secundario; 
+    margin-top: 20px; 
+    img{
+        width: 100%;
+        height: 350px; 
+    }
+    .col-lg-4{
+        padding: 20px;
+        margin: 0;
+    }
+    h2{
+        width: 100%;
+    } 
+}
+#fondo-galeria img:hover{
+    border: 5px solid $color-principal;    
+}
+
+.parrafo-form{
+    padding-top: 0 ;
+    margin-top: 0 ;
+    color: red;
+}
+.otro-parrafo{
+    padding-bottom: 0 ;
+    margin-bottom: 0 ;
+}
+#fondo-contacto{
+    min-height: 700px;
+    color: $color-secundario;   
+    margin-top: 20px; 
+    .form-control{
+        width: 400px; height: 40px;
+        transition: all 2s;     
+    }
+    .form-control:focus {
+        width: 600px;
+        font-size: map-get($map: $font-sizes, $key: xx-small);
+    }
+     
+}
+
+#fondo-np{
+    min-height: 800px;
+    color: $color-secundario;
+    margin-top: 20px;     
+    .card:hover{
+        border: 5px solid $color-principal;
+        background-image: $color-principal to $color-secundario;
+    }  
+    
+}
+.btn{    
+    @include main-button()    
+}
+
+@media (min-width: 768px){
+    #section{
+        background-image: url(https://miro.medium.com/max/3840/1*9zaHCcIqRMYAyn6i10rHBQ.png);
+        padding: 100px 100px;
+        text-align: center;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        min-height: 700px;
+        color: $color-principal;
+        h1{
+            font-size: map-get($map: $font-sizes, $key: large);
+            line-height: normal;
+        }
+        p{
+            font-size: map-get($map: $font-sizes, $key: xx-small );
+        }
+    }
+    #fondo-contacto{
+        min-height: 700px;
+        color: $color-secundario;   
+        margin-top: 20px; 
+        .form-control{
+            width: 350px; height: 40px;
+            transition: all 2s;     
+        }
+        .form-control:focus {
+            max-width: 400px;
+            font-size: map-get($map: $font-sizes, $key: xx-small);            
+        }        
+    }
+    #fondo-galeria img{
+        width: 80%;
+        height: 350px;  
+        margin:10px auto;
+		display:block;      
+    }  
+    footer{
+        font-size: map-get($map:$font-sizes, $key: x-small); 
+        background-color: whitesmoke;        
+        iframe{
+            max-width: 200px;
+        }        
+    }    
+}
