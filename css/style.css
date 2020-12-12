@@ -44,6 +44,7 @@ h1 {
   background-image: url(https://miro.medium.com/max/3840/1*9zaHCcIqRMYAyn6i10rHBQ.png);
   padding: 400px 100px;
   margin-top: 20px;
+  padding: 0 0 0 0;
   text-align: center;
   background-position: center center;
   background-size: cover;
@@ -128,7 +129,7 @@ h2 {
   background-color: #1A1A1A;
   font-size: 20px; }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   #section {
     background-image: url(https://miro.medium.com/max/3840/1*9zaHCcIqRMYAyn6i10rHBQ.png);
     padding: 100px 100px;
@@ -138,9 +139,10 @@ h2 {
     background-repeat: no-repeat;
     position: relative;
     min-height: 700px;
-    color: #ffffff; }
+    color: #ffffff;
+    padding: 20px 10px 10px 10px; }
     #section h1 {
-      font-size: 40px;
+      font-size: 20px;
       line-height: normal; }
     #section p {
       font-size: 16px; }
@@ -149,11 +151,11 @@ h2 {
     color: #1A1A1A;
     margin-top: 20px; }
     #fondo-contacto .form-control {
-      width: 350px;
+      width: 300px;
       height: 40px;
       transition: all 2s; }
     #fondo-contacto .form-control:focus {
-      max-width: 400px;
+      max-width: 320px;
       font-size: 16px; }
   #fondo-galeria img {
     width: 80%;
@@ -165,3 +167,21 @@ h2 {
     background-color: whitesmoke; }
     footer iframe {
       max-width: 200px; } }
+
+@media (max-width: 568px) {
+  #section h1 {
+    font-size: 20px;
+    line-height: normal; }
+  #section p {
+    font-size: 16px; }
+  #fondo-contacto {
+    min-height: 700px;
+    color: #1A1A1A;
+    margin-top: 20px; }
+    #fondo-contacto .form-control {
+      width: 300px;
+      height: 40px;
+      transition: all 1s; }
+    #fondo-contacto .form-control:focus {
+      width: 320px;
+      font-size: 16px; } }
