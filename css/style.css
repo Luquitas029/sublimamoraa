@@ -141,11 +141,11 @@ h2 {
     min-height: 700px;
     color: #ffffff;
     padding: 20px 10px 10px 10px; }
-    #section h1 {
-      font-size: 20px;
+    #section .fuente-título {
+      font-size: 40px;
       line-height: normal; }
-    #section p {
-      font-size: 16px; }
+    #section .fuente-parrafo {
+      font-size: 20px; }
   #fondo-contacto {
     min-height: 700px;
     color: #1A1A1A;
@@ -169,11 +169,10 @@ h2 {
       max-width: 200px; } }
 
 @media (max-width: 568px) {
-  #section h1 {
-    font-size: 20px;
-    line-height: normal; }
-  #section p {
-    font-size: 16px; }
+  #section .fuente-titulo {
+    font-size: 40px; }
+  #section .fuente-parrafo {
+    font-size: 20px; }
   #fondo-contacto {
     min-height: 700px;
     color: #1A1A1A;

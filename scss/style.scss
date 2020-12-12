@@ -168,12 +168,12 @@ h2{
         min-height: 700px;
         color: $color-principal;
         padding: 20px 10px 10px 10px;
-        h1{
-            font-size: map-get($map: $font-sizes, $key:x-small);
+        .fuente-título{
+            font-size: map-get($map: $font-sizes, $key: large);
             line-height: normal;
         }
-        p{
-            font-size: map-get($map: $font-sizes, $key:xx-small );
+        .fuente-parrafo{
+            font-size: map-get($map: $font-sizes, $key: x-small );
         }
     }
     #fondo-contacto{
@@ -205,12 +205,13 @@ h2{
 }
 @media (max-width: 568px){
     #section{       
-        h1{
-            font-size: map-get($map: $font-sizes, $key:x-small);
-            line-height: normal;
+        .fuente-titulo{
+            font-size: map-get($map: $font-sizes, $key: large);
+            
+
         }
-        p{
-            font-size: map-get($map: $font-sizes, $key:xx-small );
+        .fuente-parrafo{
+            font-size: map-get($map: $font-sizes, $key: x-small );
         }
     }
     #fondo-contacto{
