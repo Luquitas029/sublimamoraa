@@ -43,7 +43,6 @@ h1 {
 #section {
   background-image: url(https://miro.medium.com/max/3840/1*9zaHCcIqRMYAyn6i10rHBQ.png);
   padding: 400px 100px;
-  margin-top: 20px;
   padding: 0 0 0 0;
   text-align: center;
   background-position: center center;
@@ -60,7 +59,10 @@ h1 {
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.05); }
+  #section .posición-texto {
+    padding: 100px 5px 70px 5px; }
   #section .fuente-parrafo {
+    padding-top: 20px;
     color: #ffffff;
     font-size: 25px; }
   #section .fuente-título {
@@ -75,7 +77,7 @@ footer {
   background-color: whitesmoke; }
 
 .link-footer {
-  text-decoration: none; }
+  color: black; }
 
 h2 {
   font-size: 60px; }
@@ -110,11 +112,7 @@ h2 {
   margin-top: 20px; }
   #fondo-contacto .form-control {
     width: 400px;
-    height: 40px;
-    transition: all 2s; }
-  #fondo-contacto .form-control:focus {
-    width: 600px;
-    font-size: 16px; }
+    height: 40px; }
 
 #fondo-np {
   min-height: 800px;
@@ -130,6 +128,9 @@ h2 {
   font-size: 20px; }
 
 @media (max-width: 768px) {
+  .logo-brand {
+    min-width: 70px;
+    max-width: 80px; }
   #section {
     background-image: url(https://miro.medium.com/max/3840/1*9zaHCcIqRMYAyn6i10rHBQ.png);
     padding: 100px 100px;
@@ -146,41 +147,46 @@ h2 {
       line-height: normal; }
     #section .fuente-parrafo {
       font-size: 20px; }
+  .posición-texto {
+    padding: 70px 5px 70px 5px; }
   #fondo-contacto {
     min-height: 700px;
     color: #1A1A1A;
     margin-top: 20px; }
     #fondo-contacto .form-control {
       width: 300px;
-      height: 40px;
-      transition: all 2s; }
-    #fondo-contacto .form-control:focus {
-      max-width: 320px;
-      font-size: 16px; }
+      height: 40px; }
   #fondo-galeria img {
     width: 80%;
     height: 350px;
     margin: 10px auto;
     display: block; }
   footer {
-    font-size: 20px;
+    font-size: 16px;
     background-color: whitesmoke; }
+    footer h5 {
+      font-size: 16px; }
+    footer p {
+      font-size: 14px; }
     footer iframe {
       max-width: 200px; } }
 
 @media (max-width: 568px) {
+  .logo-brand {
+    min-width: 70px;
+    max-width: 80px; }
   #section .fuente-titulo {
     font-size: 40px; }
   #section .fuente-parrafo {
     font-size: 20px; }
+  .posición-texto {
+    padding: 70px 5px 70px 5px; }
   #fondo-contacto {
     min-height: 700px;
     color: #1A1A1A;
-    margin-top: 20px; }
+    padding-bottom: 25px;
+    padding-top: 25px;
+    background-image: linear-gradient(to right, whitesmoke, black); }
     #fondo-contacto .form-control {
       width: 300px;
-      height: 40px;
-      transition: all 1s; }
-    #fondo-contacto .form-control:focus {
-      width: 320px;
-      font-size: 16px; } }
+      height: 40px; } }

@@ -57,8 +57,7 @@ h1{
 }
 #section{
     background-image: url(https://miro.medium.com/max/3840/1*9zaHCcIqRMYAyn6i10rHBQ.png);
-    padding: 400px 100px;
-    margin-top: 20px; 
+    padding: 400px 100px;    
     padding: 0 0 0 0;
 	text-align: center;
 	background-position: center center;
@@ -67,7 +66,7 @@ h1{
 	position: relative;
     min-height: 700px;
     color: $color-principal;
-    :before {
+    :before{
         content:'';
         position: absolute;
         top: 0;
@@ -76,7 +75,11 @@ h1{
         right: 0;
         background-color: rgba(0,0,0, .05);
     }
+    .posición-texto{
+        padding: 100px 5px 70px 5px;
+    }
     .fuente-parrafo{
+        padding-top: 20px;
         color: $color-principal;
         font-size: map-get($map: $font-sizes, $key: small);
     }
@@ -93,7 +96,7 @@ font-size: map-get($map:$font-sizes, $key: xx-small);
 background-color: whitesmoke;
 }
 .link-footer{
-    text-decoration: none;    
+    color: black;  
 }
 
 h2{
@@ -133,13 +136,7 @@ h2{
     margin-top: 20px; 
     .form-control{
         width: 400px; height: 40px;
-        transition: all 2s;     
-    }
-    .form-control:focus {
-        width: 600px;
-        font-size: map-get($map: $font-sizes, $key: xx-small);
-    }
-     
+    }    
 }
 
 #fondo-np{
@@ -156,7 +153,13 @@ h2{
     @include main-button()    
 }
 
+
+
 @media (max-width: 768px){
+    .logo-brand{
+        min-width: 70px;
+        max-width: 80px;           
+    }
     #section{
         background-image: url(https://miro.medium.com/max/3840/1*9zaHCcIqRMYAyn6i10rHBQ.png);
         padding: 100px 100px;
@@ -176,18 +179,17 @@ h2{
             font-size: map-get($map: $font-sizes, $key: x-small );
         }
     }
+    .posición-texto{
+        padding: 70px 5px 70px 5px;
+    }
     #fondo-contacto{
         min-height: 700px;
         color: $color-secundario;   
         margin-top: 20px; 
         .form-control{
-            width: 300px; height: 40px;
-            transition: all 2s;     
+            width: 300px; height: 40px;             
         }
-        .form-control:focus {
-            max-width: 320px;
-            font-size: map-get($map: $font-sizes, $key: xx-small);            
-        }        
+          
     }
     #fondo-galeria img{
         width: 80%;
@@ -196,36 +198,45 @@ h2{
 		display:block;      
     }  
     footer{
-        font-size: map-get($map:$font-sizes, $key: x-small); 
-        background-color: whitesmoke;        
+        font-size: map-get($map:$font-sizes, $key: xx-small); 
+        background-color: whitesmoke;   
+        h5{
+            font-size: map-get($map:$font-sizes, $key: xx-small);
+        }
+        p{
+            font-size: 14px;
+        }       
         iframe{
             max-width: 200px;
         }        
     }    
 }
 @media (max-width: 568px){
+    .logo-brand{
+        min-width: 70px;
+        max-width: 80px;           
+    }
     #section{       
         .fuente-titulo{
-            font-size: map-get($map: $font-sizes, $key: large);
-            
-
+            font-size: map-get($map: $font-sizes, $key: large);           
         }
         .fuente-parrafo{
             font-size: map-get($map: $font-sizes, $key: x-small );
         }
     }
+    .posición-texto{
+        padding: 70px 5px 70px 5px;
+    }
     #fondo-contacto{
         min-height: 700px;
-        color: $color-secundario;   
-        margin-top: 20px; 
+        color: $color-secundario; 
+        padding-bottom: 25px;
+        padding-top: 25px;
+
+        background-image: linear-gradient(to right, whitesmoke, black);
         .form-control{
-            width: 300px; height: 40px;
-            transition: all 1s;     
-        }
-        .form-control:focus {
-            width: 320px;
-            font-size: map-get($map: $font-sizes, $key: xx-small);            
-        }        
+            width: 300px; height: 40px;                       
+        }             
     }
 
 
