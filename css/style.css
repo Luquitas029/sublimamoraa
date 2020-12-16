@@ -111,8 +111,9 @@ h2 {
   color: #1A1A1A;
   margin-top: 20px; }
   #fondo-contacto .form-control {
-    width: 400px;
-    height: 40px; }
+    width: 100%;
+    height: 40px;
+    position: center; }
 
 #fondo-np {
   min-height: 800px;
@@ -154,11 +155,11 @@ h2 {
     color: #1A1A1A;
     margin-top: 20px; }
     #fondo-contacto .form-control {
-      width: 300px;
+      width: 100%;
       height: 40px; }
   #fondo-galeria img {
-    width: 80%;
-    height: 350px;
+    width: 100%;
+    height: 400px;
     margin: 10px auto;
     display: block; }
   footer {
@@ -181,6 +182,14 @@ h2 {
     font-size: 20px; }
   .posición-texto {
     padding: 70px 5px 70px 5px; }
+  .titulo-articulo {
+    font-size: 40px;
+    font-weight: unset; }
+  #fondo-galeria img {
+    width: 100%;
+    height: 400px;
+    margin: 10px auto;
+    display: block; }
   #fondo-contacto {
     min-height: 700px;
     color: #1A1A1A;
@@ -188,5 +197,5 @@ h2 {
     padding-top: 25px;
     background-image: linear-gradient(to right, whitesmoke, black); }
     #fondo-contacto .form-control {
-      width: 300px;
+      width: 100%;
       height: 40px; } }
